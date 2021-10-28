@@ -28,7 +28,7 @@
 			isMove += 1;
 		}
 		function xfmove(){
-			if(xf.x>=0&&isMove==1){
+			if(xf.x>=0&&isMove>=1){
 				xf.x-=5;
 			}
 		}
@@ -36,12 +36,12 @@
 		app.ticker.add(zdmove);
 		app.ticker.add(jsmove);
 		function zdmove(){
-			if(zd.x>=80&&isMove==2){
+			if(zd.x>=80&&isMove>=2){
 				zd.x-=5;
 			}
 		}
 		function jsmove(){
-			if(isMove==3&&jieshao1.x>=300){
+			if(isMove>=3&&jieshao1.x>=300){
 				jieshao1.x-=5;
 				jieshao2.x-=5;
 				jieshao3.x-=5;
